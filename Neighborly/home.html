@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <link rel="stylesheet" href="home.css">
+</head>
+<body class="body">
+<!--  RESPONSIVE HEADER -->
+<nav class="navbar navbar-expand-md" style="background-color: rgba(184, 202, 186, 0.9) !important; backdrop-filter: blur(10px); z-index: 1000;">
+  <div class="container-fluid">
+
+    <!-- Logo (optional) -->
+    <a class="navbar-brand fw-bold" href="#" style="color:#2E5746;">Logo</a>
+
+    <!-- Hamburger button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <div class="navbar-nav">
+        <a class="nav-link header-link" href="home.html">Home</a>
+        <a class="nav-link header-link" href="neighborhoods.html">Neighborhoods</a>
+        <a class="nav-link header-link" href="contact.html">Contact Us</a>
+        <a class="nav-link header-link" href="virtual.html">Virtual Tours</a>
+        <a class="nav-link header-link" href="properties.html">Properties</a>
+        <a class="nav-link header-link" href="about.html">About Us</a>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+    
+<div class="welcome-section">
+  <img src="Neighborly/welcome-in.svg" class="welcome-section">
+  <!--ctrl 7 on illustrator bamoul l clipping mask-->
+</div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="tiger/tiger.jpg" class="d-block w-100" alt="Tiger">
+      </div>
+       <a href="neighborhoods.html" class="navbar-button">Neighborhoods</a>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="Luxury Villa">
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="City Apartment">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+<div class="container circles-section my-5">
+  <div class="row justify-content-center text-center">
+
+    <div class="col-12 col-md-4 mb-4">
+      <div class="circle">
+        <img src="house1.jpg" alt="Houses">
+      </div>
+      <h3 class="circle-title mt-3">Houses</h3>
+      <button class="btn btn-circle mt-2">Explore</button>
+    </div>
+
+    <div class="col-12 col-md-4 mb-4">
+      <div class="circle">
+        <img src="properties.jpg" alt="Properties">
+      </div>
+      <h3 class="circle-title mt-3">Properties</h3>
+      <button class="btn btn-circle mt-2" href="properties.html">Explore</button>
+    </div>
+
+    <div class="col-12 col-md-4 mb-4">
+      <div class="circle">
+        <img src="virtualtour.jpg" alt="Visual Tours">
+      </div>
+      <h3 class="circle-title mt-3">Virtual Tours</h3>
+      <button class="btn btn-circle mt-2" href="virtual.html">Explore</button>
+       <img src="Neighborly/flesh.svg" class="arrow-svg">
+    </div>
+
+  </div>
+</div>
+
+  </html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhoods</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="neighborhoods.css">    
+</head>
+
+<body>
+
+<!-- RESPONSIVE HEADER -->
+<nav class="navbar navbar-expand-md navbar-light bg-light" style="background-color: rgba(184, 202, 186, 0.9) !important; backdrop-filter: blur(10px);">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#" style="color:#2E5746;">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <div class="navbar-nav">
+        <a class="nav-link header-link" href="home.html">Home</a>
+        <a class="nav-link header-link" href="neighborhoods.html">Neighborhoods</a>
+        <a class="nav-link header-link" href="contact.html">Contact Us</a>
+        <a class="nav-link header-link" href="virtual.html">Virtual Tours</a>
+        <a class="nav-link header-link" href="properties.html">Properties</a>
+        <a class="nav-link header-link" href="about.html">About Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION WITH PHOTO -->
+<section class="hero-section">
+    <!-- Hero Image - Replace with your own image -->
+    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+         alt="Lebanese Landscape" class="hero-image">
+    
+    <div class="hero-overlay">
+        <h1 class="hero-title">Explore</h1>
+        <p class="hero-subtitle">Discover the beauty of our cities, villages, and beach resorts</p>
+    </div>
+    
+    <!-- FILTER BAR at bottom of hero - COMPLETELY VISIBLE -->
+    <div class="filter-container">
+        <div class="filter-bar">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle filter-btn" data-bs-toggle="dropdown">Cities</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Newport">Newport</a></li>
+                    <li><a class="dropdown-item" href="#Fairford ">Fairford</a></li>
+                    <li><a class="dropdown-item" href="#Bedonia ">Bedonia</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle filter-btn" data-bs-toggle="dropdown">Villages</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Beardstown">Beardstown</a></li>
+                    <li><a class="dropdown-item" href="#Alen">Alen</a></li>
+                    <li><a class="dropdown-item" href="#Jiuxi">Jiuxi</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle filter-btn" data-bs-toggle="dropdown">Beach Resorts</button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#Amanpulo">Amanpulo</a></li>
+                    <li><a class="dropdown-item" href="#Amanyara">Amanyara</a></li>
+                    <li><a class="dropdown-item" href="#Fregate">Fregate</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Spacer for filter bar -->
+<div class="content-spacer"></div>
+
+<!-- 🌆 SECTION 1 — CITIES -->
+<section class="section-title text-center">Cities</section>
+
+<div class="container place-grid">
+    <div class="place-card" id="Newport">
+        <img src="tiger/tiger.jpg" alt="Newport">
+        <div class="place-card-content">
+            <h4>Newport</h4>
+            <p>Modern lifestyle, nightlife, culture.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <div class="place-card" id=" Fairford">
+        <img src="images/city2.jpg" alt=" Fairford">
+        <div class="place-card-content">
+            <h4>Fairford</h4>
+            <p>Historic souks and architecture.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    
+    <div class="place-card" id="Bedonia">
+        <img src="images/city4.jpg" alt="Bedonia">
+        <div class="place-card-content">
+            <h4>Bedonia</h4>
+            <p>Riverside restaurants and culture.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</div>
+
+<!-- 🌄 SECTION 2 — VILLAGES -->
+<section class="section-title text-center">Villages</section>
+
+<div class="container place-grid">
+    <div class="place-card" id="Beardstown">
+        <img src="images/village1.jpg" alt="Beardstown">
+        <div class="place-card-content">
+            <h4>Beardstown</h4>
+            <p>Cool weather, nature, mountains.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <div class="place-card" id=" Alen">
+        <img src="images/village2.jpg" alt=" Alen">
+        <div class="place-card-content">
+            <h4> Alen</h4>
+            <p>Forests, hiking, calm atmosphere.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    
+    <div class="place-card" id="Jiuxi">
+        <img src="images/village4.jpg" alt="Jiuxi">
+        <div class="place-card-content">
+            <h4>Jiuxi</h4>
+            <p>Fresh air and panoramic views.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</div>
+
+<!-- 🏖️ SECTION 3 — BEACH RESORTS -->
+<section class="section-title text-center">Beach Resorts</section>
+
+<div class="container place-grid">
+    <div class="place-card" id="Amanpulo">
+        <img src="images/beach1.jpg" alt="Amanpulo">
+        <div class="place-card-content">
+            <h4>Amanpulo</h4>
+            <p>Beaches, nightlife, resorts.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+
+    <div class="place-card" id="Amanyara">
+        <img src="images/beach2.jpg" alt="Amanyara">
+        <div class="place-card-content">
+            <h4>Amanyara</h4>
+            <p>Clear water, clubs, surfing.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    
+    <div class="place-card" id="Fregate">
+        <img src="images/beach4.jpg" alt="Fregate">
+        <div class="place-card-content">
+            <h4>Fregate</h4>
+            <p>Resorts, sunsets, and marina.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

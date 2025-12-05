@@ -1,0 +1,256 @@
+.body {
+    margin: 0;
+    background-color: #B8CABA;
+}
+
+/* ------------------------- */
+/* RESPONSIVE HEADER (Bootstrap Navbar) */
+/* ------------------------- */
+
+/* Dark green hamburger icon */
+.navbar-toggler {
+    border-color: #2E5746;
+  }
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(46,87,70,1)' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Header links */
+.header-link {
+    color: black !important;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.2s;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.header-link:hover {
+    background-color: #7A9E89 !important;
+    transform: scale(1.05);
+}
+
+/* ------------------------- */
+/* FILTER BAR */
+/* ------------------------- */
+
+.filter-bar {
+    background-color: #2E5746;
+    border-radius: 20px;
+    width: 100%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2)
+}
+
+.welcome-section {
+    background-color: #2E5746;
+    width: 80%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 50px 30px;
+    border-radius: 25px;
+    text-align: center;
+    box-sizing: border-box;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.welcome-section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    color: #e6ede8;
+    margin: 0;
+    line-height: 1.2;
+}
+
+@media only screen and (max-width: 768px) {
+    .welcome-section h1 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .welcome-section h1 {
+        font-size: 1.5em;
+    }
+}
+
+.welcome-section p {
+    color: #f0f0f0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+/* Carousel */
+.carousel {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    overflow: hidden;
+    border:none; /* use border instead of shadow */
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.carousel-indicators button {
+    background-color: #2E5746;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(46, 87, 70, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;                                                       /* ess2al l doctor 3anna*/
+    display: inline-block;
+    background-size: 50% 50%;
+}
+
+h1 {
+    text-align: center;
+    color: #2E5746;
+    font-size: 48px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50% / 40%;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.2);
+     box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+
+}
+
+.gallery img.active {
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    object-fit: cover;
+    flex-basis: 100%;
+    border: 1px solid rgba(0,0,0,0.3);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+/* Circles Section */
+.circles-section {
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2); /* replaces shadow */
+     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #2E5746;
+    text-align: center;
+}
+
+.btn-circle {
+    background-color: #2E5746;
+    color: #fff;
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    display: block;
+    margin: 5px auto 0 auto;
+    border: none;
+     box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.btn-circle:hover {
+    background-color: #7A9E89;
+    transform: scale(1.05);
+}
+
+/* Navbar Button */
+.navbar-button {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    text-decoration: none;
+    background-color: #2E5746;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+     z-index: 1000;/*hey li2an l bootsrrap ma bi khaline 2a3te l code features so bzid hey la tekssour 3le*/
+}
+.navbar-button:hover {
+    background-color: #7A9E89;
+    transform: scale(1.05);
+    font-weight: 600;
+    color: black;
+   
+    
+}
+.website-intro {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    color:  #2E5746;
+    margin: 40px auto;
+    padding: 15px 20px;
+    width: 90%;
+    max-width: 900px;
+    font-weight: 600;
+}
+.arrow-svg {
+    width: 120px;                /* size of the arrow */
+    position: absolute;
+    transform: rotate(-20deg);   /* make it point at the circle */
+    right: -30px;                /* move it horizontally */
+    top: 50%;                    /* vertical position */
+    z-index: 999;
+    opacity: 0.85;               /* soft look */
+    pointer-events: none;        /* so it doesn’t block clicking */
+}
+
+/* Make sure the container is positioned */
+.col-12.col-md-4.mb-4 {
+    position: relative;
+}

@@ -1,0 +1,390 @@
+ body {
+            margin: 0;
+            background-color: #B8CABA;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* ------------------------- */
+        /* RESPONSIVE HEADER (Bootstrap Navbar) */
+        /* ------------------------- */
+
+        /* Dark green hamburger icon */
+        .navbar-toggler {
+            border-color: #2E5746;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(46,87,70,1)' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* Header links */
+        .header-link {
+            color: black !important;
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            transition: 0.2s;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .header-link:hover {
+            background-color: #7A9E89 !important;
+            transform: scale(1.05);
+        }
+
+        /* ------------------------- */
+        /* HERO SECTION WITH PHOTO */
+        /* ------------------------- */
+        .hero-section {
+            position: relative;
+            height: 550px; /* Increased height for filter bar */
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.7);
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 100px); /* Account for filter bar space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-subtitle {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.3rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* ------------------------- */
+        /* FILTER BAR - Positioned at bottom of hero */
+        /* ------------------------- */
+        .filter-container {
+            position: absolute;
+            bottom: 30px; /* Position inside hero section */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 1000px;
+            z-index: 10;
+        }
+
+        .filter-bar {
+            background: rgba(242, 246, 243, 0.95); /* semi-transparent frosted */
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            color: #2E5746;
+            padding: 25px 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .filter-btn {
+            background: rgba(255,255,255,0.9);
+            color: #2E5746;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 12px;
+            border: 2px solid #7A9E89;
+            transition: 0.3s;
+            min-width: 150px;
+        }
+
+        .filter-btn:hover {
+            background: linear-gradient(90deg, #2E5746, #7A9E89);
+            color: white;
+            border-color: #2E5746;
+            box-shadow: 0 0 8px rgba(46,87,70,0.5);
+            transform: translateY(-2px);
+        }
+
+        .dropdown-menu {
+            border-radius: 12px;
+            padding: 12px;
+            border: 2px solid #7A9E89;
+            background: rgba(242, 246, 243, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .dropdown-item {
+            border-radius: 8px;
+            padding: 8px 16px;
+            color: #2E5746;
+            transition: 0.2s;
+            font-weight: 500;
+        }
+
+        .dropdown-item:hover {
+            background: linear-gradient(90deg, #2E5746, #7A9E89);
+            color: white;
+        }
+
+        /* ------------------------- */
+        /* CONTENT SPACING */
+        /* ------------------------- */
+        .content-spacer {
+            height: 50px; /* Reduced space since filter bar is inside hero */
+        }
+
+        /* ------------------------- */
+        /* SECTION TITLES */
+        /* ------------------------- */
+        .section-title {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.5rem;
+            color: #2E5746;
+            font-weight: 700;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #7A9E89;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ------------------------- */
+        /* GRID LAYOUT */
+        /* ------------------------- */
+        .place-grid {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px 0;
+        }
+
+        /* ------------------------- */
+        /* CARDS */
+        /* ------------------------- */
+        .place-card {
+            background: rgba(242, 246, 243, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            color: #2E5746;
+            padding: 0;
+            text-align: center;
+            transition: 0.3s;
+            height: 100%;
+            overflow: hidden;
+            width: 280px;
+            min-height: 380px;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(122, 158, 137, 0.3);
+        }
+
+        .place-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+        }
+
+        .place-card img {
+            width: 100%;
+            height: 200px;
+            border-radius: 0;
+            object-fit: cover;
+            border-bottom: 2px solid #2E5746;
+        }
+
+        .place-card-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .place-card h4 {
+            margin-top: 0;
+            font-weight: 700;
+            color: #2E5746;
+            font-size: 1.4em;
+            font-family: 'Raleway', sans-serif;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .place-card p {
+            color: #2E5746;
+            font-size: 1em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        /* FIXED BUTTON - Not full width */
+        .place-card button {
+            background: linear-gradient(90deg, #2E5746, #7A9E89);
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 25px;
+            transition: 0.3s;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+            font-size: 0.95em;
+            letter-spacing: 0.5px;
+            margin-top: auto;
+            width: auto;
+            min-width: 140px;
+            display: inline-block;
+        }
+
+        .place-card button:hover {
+            background: linear-gradient(90deg, #7A9E89, #2E5746);
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(46, 87, 70, 0.3);
+        }
+
+        /* ------------------------- */
+        /* RESPONSIVE DESIGN */
+        /* ------------------------- */
+        @media only screen and (max-width: 768px) {
+            .hero-section {
+                height: 500px;
+            }
+
+            .hero-overlay {
+                height: calc(100% - 120px); /* Adjust for larger filter bar on mobile */
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .filter-container {
+                bottom: 20px;
+                width: 95%;
+            }
+
+            .filter-bar {
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .filter-btn {
+                min-width: 130px;
+                padding: 10px 20px;
+            }
+
+            .place-card {
+                width: 250px;
+                min-height: 360px;
+            }
+
+            .section-title {
+                font-size: 2rem;
+                margin-top: 80px;
+            }
+
+            /* Navbar responsiveness fixes */
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .header-link {
+                font-size: 1rem;
+                padding: 12px 16px;
+            }
+
+            /* Make navbar visible on mobile */
+            .navbar {
+                background-color: rgba(184, 202, 186, 0.9) !important;
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            .hero-section {
+                height: 500px;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+                padding: 0 15px;
+            }
+
+            .filter-container {
+                bottom: 15px;
+                width: 95%;
+            }
+
+            .filter-bar {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 15px;
+            }
+
+            .filter-btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .place-card {
+                width: 100%;
+                max-width: 300px;
+                min-height: 340px;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+                margin-top: 80px;
+            }
+
+            /* Better navbar visibility on very small screens */
+            .navbar {
+                background-color: rgba(184, 202, 186, 0.95) !important;
+                backdrop-filter: blur(10px);
+            }
+
+            .place-grid {
+                gap: 20px;
+                padding: 10px;
+            }
+        }

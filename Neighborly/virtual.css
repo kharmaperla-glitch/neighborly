@@ -1,0 +1,295 @@
+body {
+            margin: 0;
+            background-color: #B8CABA;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* RESPONSIVE HEADER - Your exact header */
+        .navbar-toggler {
+            border-color: #2E5746;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(46,87,70,1)' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .header-link {
+            color: black !important;
+            padding: 10px 18px;
+            border-radius: 12px;
+            font-weight: 700;
+            transition: 0.2s;
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        .header-link:hover {
+            background-color: #7A9E89 !important;
+            transform: scale(1.05);
+        }
+
+        /* Virtual Tour Header Section */
+        .virtual-tour-header {
+            background-color: #2E5746;
+            width: 80%;
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 50px 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .virtual-tour-header h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 3em;
+            font-weight: 700;
+            color: #e6ede8;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .virtual-tour-header p {
+            color: #f0f0f0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.2em;
+            margin-top: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* Horizontal Scroll Containers */
+        .horizontal-scroll-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 20px 10px;
+            gap: 20px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .horizontal-scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .horizontal-scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .horizontal-scroll-container::-webkit-scrollbar-thumb {
+            background: #7A9E89;
+            border-radius: 10px;
+        }
+
+        /* House Sections */
+        .house-section {
+            background: rgba(242, 246, 243, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+            padding: 30px;
+            margin-bottom: 40px;
+        }
+
+        .house-title {
+            color: #2E5746;
+            font-weight: 700;
+            border-bottom: 3px solid #7A9E89;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+
+        .house-info {
+            background: linear-gradient(90deg, #2E5746, #7A9E89);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        /* Room Cards */
+        .room-card {
+            flex: 0 0 auto;
+            width: 300px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .room-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .room-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 3px solid #7A9E89;
+        }
+
+        .room-content {
+            padding: 20px;
+        }
+
+        .room-name {
+            color: #2E5746;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .room-description {
+            color: #2E5746;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .room-features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid rgba(122, 158, 137, 0.3);
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature-value {
+            display: block;
+            font-weight: bold;
+            color: #2E5746;
+            font-size: 0.9rem;
+        }
+
+        .feature-label {
+            font-size: 0.75rem;
+            color: #7A9E89;
+        }
+
+        /* Property Stats */
+        .property-stats {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #2E5746;
+            display: block;
+        }
+
+        .stat-label {
+            color: #7A9E89;
+            font-size: 0.9rem;
+        }
+
+        /* Instructions */
+        .instructions {
+            background: rgba(255, 255, 255, 0.7);
+            border-left: 4px solid #7A9E89;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2E5746;
+            color: white;
+            padding: 30px 0;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .room-card {
+                width: 280px;
+            }
+
+            .room-img {
+                height: 180px;
+            }
+
+            .virtual-tour-header h1 {
+                font-size: 2em;
+            }
+
+            .virtual-tour-header {
+                width: 90%;
+                padding: 40px 20px;
+            }
+
+            /* Navbar responsiveness fixes */
+            .navbar-brand {
+                font-size: 1.5rem;
+            }
+
+            .header-link {
+                font-size: 1rem;
+                padding: 12px 16px;
+            }
+        }
+        
+
+        @media (max-width: 576px) {
+            .room-card {
+                width: 250px;
+            }
+
+            .room-img {
+                height: 160px;
+            }
+
+            .virtual-tour-header h1 {
+                font-size: 1.8em;
+            }
+        }
+
+        /* iPad Air responsiveness (820x1180) */
+        @media (max-width: 820px) and (max-height: 1180px) {
+            .room-card {
+                width: 280px;
+            }
+
+            .room-img {
+                height: 180px;
+            }
+
+            .virtual-tour-header h1 {
+                font-size: 2.5em;
+            }
+
+            .virtual-tour-header {
+                width: 85%;
+                padding: 45px 25px;
+            }
+
+            .horizontal-scroll-container {
+                padding: 15px 8px;
+                gap: 18px;
+            }
+
+            .navbar-brand {
+                font-size: 1.4rem;
+            }
+
+            .header-link {
+                font-size: 0.95rem;
+                padding: 10px 15px;
+            }
+        }
